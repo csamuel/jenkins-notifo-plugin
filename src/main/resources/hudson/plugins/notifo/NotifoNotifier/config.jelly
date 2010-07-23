@@ -1,0 +1,16 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+    <f:entry title="Service User Name" field="serviceUser">
+        <f:textbox field="serviceUser" />
+    </f:entry>
+    <f:entry title="API Token" field="apiToken">
+        <f:textbox field="apiToken" />
+    </f:entry>
+    <f:entry title="Usernames to receive notifications (comma separated)" field="userNames">
+        <f:textbox field="userNames" />
+    </f:entry>
+    <f:entry title="Send notifications for successful builds" field="notifyOnSuccess">
+        <f:checkbox field="notifyOnSuccess" checked="${notifyOnSuccess}" />
+    </f:entry>
+    
+</j:jelly>
