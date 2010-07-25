@@ -27,4 +27,4 @@ Alternatively, you can build from source using the steps below:
 
 ### Credits
 
-Design inspired by the [Bamboo Notifier](http://wiki.hudson-ci.org/display/HUDSON/Bamboo+Notifier) plugin by Asgeir Storesund Nilsen.
+Based on the [Bamboo Notifier](http://wiki.hudson-ci.org/display/HUDSON/Bamboo+Notifier) plugin by Asgeir Storesund Nilsen.
