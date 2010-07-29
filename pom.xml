@@ -13,7 +13,7 @@
     <groupId>org.jvnet.hudson.plugins</groupId>
     <artifactId>notifo</artifactId>
     <packaging>hpi</packaging>
-    <version>1.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>Hudson Notifo Plugin</name>
     <description>A Build status publisher that sends Notifo notifications</description>
     <url>http://wiki.hudson-ci.org/display/HUDSON/Notifo+Plugin</url>
