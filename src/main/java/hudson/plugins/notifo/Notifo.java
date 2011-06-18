@@ -19,45 +19,37 @@ public class Notifo
     private Iterable<String> userList;
     private String token;
 
-    public Notifo( String serviceUser, String token, Iterable<String> userList )
-    {
+    public Notifo( String serviceUser, String token, Iterable<String> userList ) {
         this.serviceUser = serviceUser;
         this.userList = userList;
         this.token = token;
     }
 
-    public void post( String body, BuildListener listener )
-              throws IOException
-    {
-        createClient(  );
+    public void post(String body, BuildListener listener) throws IOException {
+        createClient();
 
-        for ( String username : this.userList )
-        {
-            PostMethod post = new PostMethod( NOTIFO_URI );
-            NameValuePair[] data =
-                { new NameValuePair( "to", username ), new NameValuePair( "msg", body ), new NameValuePair( "title",
-                                                                                                            "Build Status" ) };
-            post.setRequestBody( data );
-
-            try
-            {
+        for (String username : this.userList ) {
+            PostMethod post = new PostMethod(NOTIFO_URI);
+            NameValuePair[] data = {
+                new NameValuePair("to", username),
+                new NameValuePair("msg", body ),
+                new NameValuePair("title", "Build Status" )
+            };
+            post.setRequestBody(data);
+            try {
                 client.executeMethod( post );
-            } catch ( Exception e )
-            {
+            } catch ( Exception e ) {
                 e.printStackTrace( listener.error( "Unable to send message to Notifo API for username: %s", username ) );
-            } finally
-            {
-                post.releaseConnection(  );
+            } finally {
+                post.releaseConnection();
             }
         }
     }
 
-    private void createClient(  )
-    {
-        client = new HttpClient(  );
-
-        Credentials defaultcreds = new UsernamePasswordCredentials( serviceUser, token );
-        client.getState(  ).setCredentials( AuthScope.ANY, defaultcreds );
-        client.getParams(  ).setAuthenticationPreemptive( true );
+    private void createClient() {
+        client = new HttpClient();
+        Credentials defaultcreds = new UsernamePasswordCredentials(serviceUser, token);
+        client.getState().setCredentials(AuthScope.ANY, defaultcreds);
+        client.getParams().setAuthenticationPreemptive(true);
     }
 }
