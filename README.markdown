@@ -1,8 +1,8 @@
-## Notifo Plugin for Hudson
+## Notifo Plugin for Jenkins CI
 
 [![Build Status](https://secure.travis-ci.org/csamuel/hudson-notifo-plugin.png)](http://travis-ci.org/csamuel/hudson-notifo-plugin)
 
-This is a Hudson plugin for integration with the [Notifo API](http://notifo.com/) to push build notifications to mobile devices.
+This is a Jenkins plugin for integration with the [Notifo API](http://notifo.com/) to push build notifications to mobile devices.
 
 For now, the plugin is hosted on Github at [http://github.com/csamuel/hudson-notifo-plugin](http://github.com/csamuel/hudson-notifo-plugin).
 
@@ -20,7 +20,7 @@ Alternatively, you can build from source using the steps below:
 1. git clone git@github.com:csamuel/hudson-notifo-plugin.git
 2. cd hudson-notifo-plugin
 3. mvn package
-4. Upload target/notifo.hpi to your Hudson server. You will need to restart hudson for it to take effect.
+4. Upload target/notifo.hpi to your Hudson server. You will need to restart Jenkins for it to take effect.
 	
 ### TODO:
 
