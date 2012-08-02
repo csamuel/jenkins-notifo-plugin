@@ -11,7 +11,7 @@
 	</parent>
 	<artifactId>notifo</artifactId>
 	<packaging>hpi</packaging>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<name>Notifo Plugin</name>
 	<description>A Build status publisher that sends Notifo notifications</description>
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/Notifo+Plugin</url>
