@@ -1,5 +1,7 @@
 ## Notifo Plugin for Hudson
 
+[![Build Status](https://secure.travis-ci.org/csamuel/hudson-notifo-plugin.png)](http://travis-ci.org/csamuel/hudson-notifo-plugin)
+
 This is a Hudson plugin for integration with the [Notifo API](http://notifo.com/) to push build notifications to mobile devices.
 
 For now, the plugin is hosted on Github at [http://github.com/csamuel/hudson-notifo-plugin](http://github.com/csamuel/hudson-notifo-plugin).
